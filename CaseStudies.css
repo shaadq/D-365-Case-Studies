@@ -1,0 +1,751 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-thumb {
+  width: 7px;
+  background-color: #00000086;
+}
+.landing-page-container {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-image: url(assets/main-landing-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.intelegain-logo-wrapper img {
+  width: 320px;
+}
+.landing-page-title {
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+}
+.tile-container {
+  gap: 20px;
+}
+.tile-container img {
+  width: 300px;
+}
+.btn-outline-primary {
+  border: 1px solid #ff7a00;
+  color: #ff7a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+.content-page {
+  height: 100vh;
+  width: 100%;
+  background-image: url(assets/content-bg.png);
+  background-size: cover;
+}
+.content-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+.list-of-content {
+  margin-top: 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content-details {
+  padding: 3px 62px 3px 3px;
+  border-radius: 50px 0 0 50px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgb(82, 172, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 172, 255, 1) 0%,
+    rgba(82, 172, 255, 1) 0%,
+    rgba(175, 217, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.content-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 55px;
+  background-color: white;
+  border-radius: 50%;
+}
+.content-title-text {
+  letter-spacing: 1px;
+}
+.content-intelegain-logo {
+  position: absolute;
+  right: 100px;
+  width: 240px;
+}
+.menu {
+  /* padding: 5px 5px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgba(255, 255, 255, 0.685);
+  z-index: 9;
+  position: fixed;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100px;
+  width: 32px;
+  max-width: 32px;
+  text-align: center;
+}
+.menu a {
+  margin: 15px 0;
+  text-decoration: none;
+}
+.menu-item {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  border-radius: 50%;
+  font-size: 11px;
+}
+.menu .menu-item.active {
+  width: 35px;
+  height: 34px;
+  color: white;
+  font-weight: bold;
+  margin-left: -2px;
+  background-image: linear-gradient(#ff5c00, #fe9f2d);
+}
+.menu-item:hover {
+  /* background-color: #333333af; */
+  /* color: white; */
+  /* transform: scale(1.2); */
+}
+.menu-title {
+  display: none;
+  z-index: -1;
+}
+.active .menu-title {
+  display: block;
+  position: absolute;
+  width: 214px;
+  right: -5px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.678);
+  letter-spacing: 1px;
+  background-color: #ffffff87;
+  padding: 5px 46px 5px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 42px;
+  border-radius: 50px;
+  z-index: -1;
+}
+.wrapper {
+  padding: 30px 0px 30px 80px;
+}
+.wrapper-secondary {
+  padding: 20px 120px 15px 80px;
+}
+.text-orange {
+  color: #ff7a00;
+}
+.landing-bg {
+  position: relative;
+  height: 100vh;
+  background-image: url(./assets/landing-bg.png);
+  background-size: cover;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landing-intelegain-logo {
+  width: 50px;
+  position: absolute;
+  top: 80px;
+  right: 80px;
+}
+.landing-logo {
+  width: 320px;
+}
+.landing-heading {
+  font-size: 42px;
+  color: #1546c6;
+}
+.section-wrapper {
+  position: relative;
+  height: 100vh;
+}
+.section-top-container {
+  height: 100px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-wrapper {
+  background-color: white;
+  padding: 0 10px;
+}
+.header-logo {
+  /* margin-top: -10px; */
+  width: 115px;
+}
+.header-dynamic-logo {
+  width: 210px;
+}
+.custom-hr {
+  /* top: 60px; */
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff9021;
+}
+.content-intelegain-logo {
+  position: absolute;
+  right: 100px;
+  bottom: 90px;
+  width: 240px;
+}
+.section-bottom-container {
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+.section-heading {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.problem-wrapper {
+  min-height: 50%;
+  max-height: fit-content;
+}
+.solution-wrapper {
+  min-height: 50%;
+  max-height: fit-content;
+  background-color: #242424;
+}
+.problem-heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+.problem-heading img {
+  width: 20px;
+  margin-right: 10px;
+}
+.list-item {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.solution-wrapper .list-item {
+  color: white;
+}
+.solution-heading {
+  color: white;
+  font-size: 20px;
+}
+.solution-heading img {
+  width: 20px;
+  margin-right: 10px;
+}
+.right-img-wrapper {
+  position: absolute;
+  top: 160px;
+  right: 120px;
+}
+.right-img-wrapper img {
+  width: 400px;
+}
+.confidential-wrapper {
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 7px 0 7px 20px;
+  background: transparent
+    linear-gradient(90deg, #000000 0%, #000000a1 42%, #00000000 100%);
+}
+.confidential-wrapper span {
+  color: white;
+  opacity: 70%;
+}
+.tooltip {
+  font-family: "Poppins", sans-serif;
+}
+.tooltip-inner {
+  padding: 0;
+  border: none;
+  background: none;
+  width: fit-content;
+  font-size: 16px;
+  color: orange;
+  letter-spacing: 1px;
+}
+.tooltip .tooltip-arrow {
+  display: none !important;
+}
+.header-title {
+  position: absolute;
+  top: 134px;
+  right: 125px;
+}
+.contact-us-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.contact-us-section .contact-us-top {
+  background-image: url(assets/contact-us-bg.png);
+  background-size: cover;
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.contact-us-title {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+.contact-us-email-wrapper {
+  color: white;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-us-email-wrapper img {
+  width: 26px;
+}
+.our-locations-wrapper {
+  color: white;
+  font-size: 32px;
+}
+.contact-us-section .contact-us-bottom {
+  height: 45%;
+  width: 100%;
+}
+.locations-container {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.location-wrapper {
+  width: 211px;
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.location-img {
+  position: absolute;
+  width: 75px;
+  top: -35px;
+}
+.location-title {
+  color: #ff5c00;
+  font-size: 17px;
+}
+.location-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 25px;
+  font-size: 14px;
+  /* height: 125px; */
+}
+.country-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .right-img-wrapper {
+    right: 60px;
+  }
+  .right-img-wrapper img {
+    width: 370px;
+  }
+  .header-title {
+    /* width: 274px; */
+    position: absolute;
+    top: 133px;
+    right: 62px;
+    /* left: 855px; */
+  }
+  .wrapper-secondary {
+    padding: 28px 60px 15px 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .right-img-wrapper {
+    display: none;
+  }
+  /* Landing Section */
+  .landing-intelegain-logo {
+    width: 40px;
+    top: 40px;
+    right: 40px;
+  }
+  .landing-logo {
+    width: 230px;
+  }
+  .landing-heading {
+    font-size: 22px;
+    text-align: center;
+  }
+  /* Main Sections */
+  .wrapper {
+    padding: 25px 49px 25px 25px;
+  }
+  .wrapper-secondary {
+    padding: 25px;
+  }
+  .menu-item {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .section-heading {
+    font-size: 16px;
+  }
+  .header-dynamic-logo {
+    width: 150px;
+  }
+  .header-logo {
+    width: 100px;
+  }
+  .logo-wrapper {
+    padding: 0 5px;
+  }
+  .header-title {
+    display: none;
+  }
+  .list-item div {
+    font-size: 16px;
+  }
+  .section-top-container {
+    height: 75px;
+  }
+  .section-bottom-container {
+    height: calc(100vh - 75px);
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  }
+  .problem-heading img {
+    width: 18px;
+  }
+  .problem-heading,
+  .solution-heading {
+    font-size: 16px;
+  }
+  .list-item {
+    gap: 15px;
+  }
+  /* Tootltip */
+  .tooltip-inner {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .right-img-wrapper {
+    display: none;
+  }
+  .menu a {
+    margin: 2px 0px 3px -1px;
+  }
+  /* Landing Section */
+  .landing-intelegain-logo {
+    width: 40px;
+    top: 40px;
+    right: 40px;
+  }
+  .landing-logo {
+    width: 230px;
+  }
+  .landing-heading {
+    font-size: 22px;
+    text-align: center;
+  }
+  /* Main Sections */
+  .landing-bg {
+    background-image: url(./assets/section-landing-mobile-bg.png);
+  }
+  .wrapper {
+    padding: 20px 49px 20px 20px;
+  }
+  .wrapper-secondary {
+    padding: 20px;
+  }
+  .menu-item {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .section-heading {
+    font-size: 14px;
+  }
+  .header-dynamic-logo {
+    width: 150px;
+  }
+  .header-logo {
+    width: 69px;
+  }
+  .logo-wrapper {
+    padding: 0 5px;
+  }
+  .header-title {
+    display: none;
+  }
+  .list-item div {
+    font-size: 14px;
+  }
+  .section-top-container {
+    height: 75px;
+  }
+  .section-bottom-container {
+    height: calc(100vh - 75px);
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  }
+  .problem-heading img {
+    width: 18px;
+  }
+  .problem-heading,
+  .solution-heading {
+    font-size: 16px;
+  }
+  .list-item {
+    gap: 10px;
+  }
+  /* Tootltip */
+  .tooltip-inner {
+    font-size: 12px;
+  }
+
+  /* Landing page */
+  .landing-page-container {
+    background-image: url(assets/landing-mobile-bg.png);
+    gap: 30px;
+  }
+  .intelegain-logo-wrapper img {
+    width: 220px;
+  }
+  .landing-page-title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .tile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .tile-container img {
+    width: 240px;
+  }
+  /* Content Page */
+  .content-title {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .content-details {
+    padding: 3px 20px 3px 3px;
+    font-size: 16px;
+    gap: 13px;
+  }
+  .content-title-text {
+    letter-spacing: 0px;
+  }
+  .content-number {
+    height: 35px;
+    width: 40px;
+  }
+  .list-of-content {
+    margin-top: 45px;
+    gap: 30px;
+  }
+  .content-intelegain-logo {
+    right: 35px;
+    bottom: 36px;
+    width: 170px;
+  }
+  .active .menu-title {
+    display: none;
+  }
+  /* Contact us page */
+  .contact-us-section .contact-us-top {
+    background-image: url(assets/contact-us-bg.png);
+    background-size: cover;
+    height: 17%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .location-title {
+    color: #ff5c00;
+    font-size: 14px;
+  }
+  .contact-us-title {
+    font-size: 27px;
+  }
+  .contact-us-email-wrapper {
+    font-size: 18px;
+    gap: 10px;
+  }
+  .our-locations-wrapper {
+    font-size: 25px;
+    display: none;
+  }
+  .locations-container {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+  }
+  .location-wrapper {
+    width: fit-content;
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .location-img {
+    position: relative;
+    width: 75px;
+    top: 0px;
+  }
+  .location-address {
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 380px) {
+  .menu-item {
+    font-size: 14px;
+  }
+  .section-heading {
+    font-size: 14px;
+  }
+  .list-item div {
+    font-size: 12px;
+  }
+  .section-top-container {
+    height: 75px;
+  }
+  .section-bottom-container {
+    height: calc(100vh - 75px);
+    display: grid;
+    grid-template-rows: min-content 1fr;
+  }
+  .problem-heading img {
+    width: 18px;
+  }
+  .problem-heading,
+  .solution-heading {
+    font-size: 14px;
+  }
+  /* Tootltip */
+  .tooltip-inner {
+    font-size: 12px;
+  }
+
+  /* Landing page */
+  .landing-page-container {
+    background-image: url(assets/landing-mobile-bg.png);
+    gap: 10px;
+  }
+  .intelegain-logo-wrapper img {
+    width: 200px;
+  }
+  .landing-page-title {
+    font-size: 22px;
+  }
+  .tile-container {
+    gap: 0px;
+  }
+  .tile-container img {
+    width: 200px;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.lhs {
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInLeft;
+  /* animation: fadeInleft 1s ease forwards; */
+  /* -webkit-animation-name: fadeInLeft; */
+}
+.rhs {
+  visibility: visible;
+  animation-duration: 1s;
+  animation-name: fadeInRight;
+  animation: fadeInRight 1s ease forwards;
+  /* -webkit-animation-name: fadeInLeft; */
+}
